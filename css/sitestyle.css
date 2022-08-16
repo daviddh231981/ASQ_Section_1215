@@ -108,6 +108,14 @@ h4 {
     font-variant: normal; 
     line-height: 24px;
     font-weight: 700;
+} 
+
+h5 {
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 24px;
+    font-weight: 700;
 }
   
 p { 
