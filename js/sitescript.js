@@ -1,9 +1,5 @@
 //JS file created on August 7, 2022, by David Ding
 
-//NAV variables
-const navShowContents = document.querySelector("nav");
-const btnShowNavigation = document.getElementById("navBtn");
-
 //Scroll to Top
 //Get the button:
 scrollBtn = document.getElementById("scrollBtn");
@@ -31,12 +27,16 @@ function topFunction() {
 //when button is selected, show navigation.
 function showNav() {
 
-    if (navShowContents.style.display === "none") {
-        navShowContents.style.display = "block";
-        btnShowNavigation.innerHTML = "Hide<br>Menu"; 
+    //NAV variables
+    const navShowContents = document.querySelector("nav");
+    const btnShowNavigation = document.getElementById("navBtn");
+
+    if (navShowContents.style.display === "block") {
+        navShowContents.style.display = "none";
+        btnShowNavigation.innerHTML = "Show<br>Menu"; 
         topFunction();      
     } else {
-        navShowContents.style.display = "none"
-        btnShowNavigation.innerHTML = "Show<br>Menu";
+        navShowContents.style.display = "block"
+        btnShowNavigation.innerHTML = "Hide<br>Menu";
     }
 }
