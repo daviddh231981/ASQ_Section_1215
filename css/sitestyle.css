@@ -29,13 +29,14 @@ body {
 }
 
 header {
-    padding-right: 80px;
     background-color: #0A1383;
     border-bottom: 2px solid #00C963;
 }
 
 header h1 a {
     font-size: 32px;
+    padding-right: 80px;
+    min-height: 100px;
 }
 
 main {
@@ -194,14 +195,18 @@ img {
 
 @media screen and (min-width: 481px) {
     /* comes into effect for screens larger than or equal to 481 pixels */
+    header {
+        display: flex;
+    }
     header h1 a {
         font-size: 64px;
-        font-weight: 100;
-        padding-right: 80px;
+        padding-right: 0;
     }
     nav {
+        align-content: right;
         display: block;
-        margin-top: 0px;
+        margin: 0;
+        width: 70%;
     }
     nav li {
         display: inline-block;
