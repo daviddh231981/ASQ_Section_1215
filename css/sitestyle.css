@@ -147,8 +147,7 @@ footer{
 }
 
 img {
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%
     height: auto;
 }
 
@@ -220,12 +219,6 @@ img {
     #navBtn {
         display: none;
     }
-    img {
-        max-width: 25%;
-        min-width: 25%;
-        max-height: 25%;
-        min-height: 25%;
-    }
     #memberInfo {
         display: flex;
     }
@@ -257,12 +250,6 @@ img {
     }
     #navBtn {
         display: none;
-    }
-    img {
-        max-width: 25%;
-        min-width: 25%;
-        max-height: 25%;
-        min-height: 25%;
     }
     #memberInfo {
         display: flex;
