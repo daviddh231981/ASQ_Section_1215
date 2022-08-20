@@ -213,9 +213,9 @@ img {
     }
     nav {
         align-content: right;
-        display: block;
-        margin: 0;
-        width: 1100px;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 900px;
     }
     nav li {
         display: inline-block;
