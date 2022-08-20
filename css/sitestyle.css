@@ -138,6 +138,10 @@ p {
     line-height: 20px;
 }
 
+a {
+    color: #FFF;
+}
+
 footer p { 
     font-size: 16px; 
     font-style: normal; 
