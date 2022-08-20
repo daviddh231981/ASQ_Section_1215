@@ -33,6 +33,10 @@ header {
     border-bottom: 2px solid #00C963;
 }
 
+header h1 {
+    max-width: 500px;
+}
+
 header h1 a {
     font-size: 32px;
     padding-right: 80px;
@@ -147,7 +151,7 @@ footer{
 }
 
 img {
-    width: 100%
+    width: 100%;
     height: auto;
 }
 
@@ -196,9 +200,12 @@ img {
     header {
         display: flex;
     }
+    header h1 {
+        max-width: 500px;
+        font-size: 48px;
+    }
     header h1 a {
-        font-size: 64px;
-        padding-right: 0;
+        font-size: 48px;
     }
     nav {
         align-content: right;
@@ -224,19 +231,16 @@ img {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 999px) {
-    /* comes into effect for screens between 480 and 1000 pixels */
-    header {
-        display: inline;
-    }
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    /* comes into effect for screens between 600 and 1000 pixels */
+
     header h1 a {
-        padding-right: 0;
+        font-size: 40px;
     }
     nav {
         align-content: right;
         display: block;
         margin: 0;
-        width: 70%;
     }
     nav li {
         display: inline-block;
