@@ -58,13 +58,13 @@ nav ul {
 
 nav li {
     display: inline-block;
-    width: 100px;
+    width: 200px;
+    height: 40px;
     font-size: 110%;
     text-align: center;
     background-color: #0F1AA2;
     border: 3px solid #008541; 
     margin: 1%;
-    padding: 10px;
 }
 
 nav a {
@@ -124,7 +124,6 @@ h5 {
     font-style: normal; 
     font-variant: normal; 
     line-height: 24px;
-    font-weight: 700;
 }
   
 p { 
@@ -193,13 +192,51 @@ img {
     background-color: #00C963; /* Background on hover */
 }
 
-@media screen and (min-width: 481px) {
-    /* comes into effect for screens larger than or equal to 481 pixels */
+@media screen and (min-width: 1000px) {
+    /* comes into effect for screens greater than 1000 pixels */
     header {
         display: flex;
     }
     header h1 a {
         font-size: 64px;
+        padding-right: 0;
+    }
+    nav {
+        align-content: right;
+        display: block;
+        margin: 0;
+        width: 1100px;
+    }
+    nav li {
+        display: inline-block;
+        width: 100px;
+        font-size: 110%;
+        text-align: center;
+        background-color: #0F1AA2;
+        border: 3px solid #008541; 
+        margin: 1%;
+        padding: 10px;
+    }
+    #navBtn {
+        display: none;
+    }
+    img {
+        max-width: 25%;
+        min-width: 25%;
+        max-height: 25%;
+        min-height: 25%;
+    }
+    #memberInfo {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 999px) {
+    /* comes into effect for screens between 480 and 1000 pixels */
+    header {
+        display: inline;
+    }
+    header h1 a {
         padding-right: 0;
     }
     nav {
@@ -220,5 +257,14 @@ img {
     }
     #navBtn {
         display: none;
+    }
+    img {
+        max-width: 25%;
+        min-width: 25%;
+        max-height: 25%;
+        min-height: 25%;
+    }
+    #memberInfo {
+        display: flex;
     }
 }
