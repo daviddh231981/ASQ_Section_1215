@@ -10,9 +10,22 @@
         <link rel="stylesheet" href="css/sitestyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            img {
-                max-width: 150px;
-                height: auto;
+            @media screen and (min-width: 1000px) {
+            /* comes into effect for screens greater than 1000 pixels */
+                #memberInfo {
+                    display: flex;
+                }
+                img {
+                    width: 10%;
+                    height: auto;
+                }
+            }
+
+            @media screen and (min-width: 600px) and (max-width: 999px) {
+                /* comes into effect for screens between 600 and 1000 pixels */
+                #navBtn {
+                    display: none;
+                } 
             }
         </style>
     </head>
